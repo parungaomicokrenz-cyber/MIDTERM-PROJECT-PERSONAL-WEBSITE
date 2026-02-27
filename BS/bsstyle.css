@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, serif;
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: rgba(82, 110, 88, 0.95);
+}
+
+/* LOGO */
+.logo h1 {
+    font-size: 24px;
+    line-height: 1.2;
+    color: white;
+}
+
+/* NAV LINKS */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+/* ACTIVE PAGE */
+nav a.active {
+    border-bottom: 2px solid white;
+    padding-bottom: 3px;
+}
+body {
+  font-family: "Garamond", serif;
+  background: linear-gradient(135deg, #cfded4, #355f3b);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 920px;
+  background-color: #ffffff;
+  margin: 80px auto;
+  padding: 40px;
+  border-radius: 14px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+h1 {
+  font-size: 30px;
+  color: #355f3b;
+  letter-spacing: 1px;
+}
+
+h4 {
+  font-weight: 400;
+  color: #666;
+  margin-top: 5px;
+}
+
+h3 {
+  color: #355f3b;
+  margin-top: 35px;
+  border-left: 5px solid #355f3b;
+  padding-left: 12px;
+  text-align: left;
+}
+
+p {
+  line-height: 1.9;
+  font-size: 16.5px;
+  color: #333;
+  margin-top: 18px;
+  text-align: left;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, #355f3b, #355f3b);
+  margin: 35px 0;
+  border-radius: 5px;
+}
+
+/* BUTTONS */
+.button-group {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.story-btn {
+  text-decoration: none;
+  background-color: #355f3b;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.story-btn:hover {
+  background-color: #2a4a2e;
+  transform: translateY(-3px);
+}

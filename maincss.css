@@ -1,0 +1,109 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, serif;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 100vh;
+    background: url("ngimg.jpg") no-repeat center center/cover;
+    position: relative;
+    color: white;
+}
+
+/* DARK OVERLAY FOR READABILITY */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+/* NAVBAR */
+.navbar {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: rgba(82, 110, 88, 0.95);
+}
+
+.logo h1 {
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+/* HERO TEXT */
+.hero-content {
+    position: absolute;
+    right: 60px;
+    top: 35%;
+    max-width: 600px;
+    z-index: 2;
+}
+
+.hero-content h2 {
+    font-size: 36px;
+    line-height: 1.4;
+    margin-bottom: 25px;
+}
+
+/* QUOTE BOX */
+.quote {
+    background: white;
+    color: #333;
+    padding: 15px 20px;
+    border-left: 6px solid #2f4f3f;
+    font-style: italic;
+    display: inline-block;
+}
+
+/* CONTACT INFO */
+.contact {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    z-index: 2;
+    font-size: 14px;
+}
+
+.contact p {
+    margin-bottom: 5px;
+}
+
+.video-container {
+    position: absolute;
+    left: 80px;      /* move from left side */
+    bottom: 120px;   /* adjust vertically */
+    z-index: 2;
+}
+
+.video-container video {
+    width: 500px;     /* adjust width to match blue box */
+    height: 340px;    /* optional: control height */
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}

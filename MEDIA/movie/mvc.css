@@ -1,0 +1,139 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, serif;
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: rgba(82, 110, 88, 0.95);
+}
+
+.logo h1 {
+    font-size: 24px;
+    line-height: 1.2;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+nav a.active {
+    border-bottom: 2px solid white;
+    padding-bottom: 3px;
+}
+
+/* MAIN SECTION */
+.movies-section {
+    padding: 150px 80px 60px;
+    background: linear-gradient(to bottom, #f4f4f4, #e8efe9);
+    min-height: 100vh;
+}
+
+.movies-section h2 {
+    text-align: center;
+    font-size: 38px;
+    color: #2f4f3f;
+    margin-bottom: 50px;
+}
+
+/* GENRE */
+.genre {
+    font-size: 24px;
+    color: #2f4f3f;
+    margin: 40px 0 20px 0;
+    border-left: 6px solid #2f4f3f;
+    padding-left: 12px;
+}
+
+/* MOVIE CARD */
+.movie-card {
+    display: flex;
+    gap: 30px;
+    background: white;
+    padding: 25px;
+    margin-bottom: 50px;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+    transform: translateY(-6px);
+}
+
+.movie-card img {
+    width: 250px;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.movie-info {
+    flex: 1;
+}
+
+.movie-info h4 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: #2f4f3f;
+}
+
+.movie-info p {
+    margin-bottom: 10px;
+    color: #444;
+    line-height: 1.6;
+}
+
+iframe {
+    margin-top: 15px;
+    border-radius: 6px;
+}
+
+.button-group {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.story-btn {
+  text-decoration: none;
+  background-color: #355f3b;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.story-btn:hover {
+  background-color: #2a4a2e;
+  transform: translateY(-3px);
+}

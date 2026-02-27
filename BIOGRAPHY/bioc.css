@@ -1,0 +1,146 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, serif;
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: rgba(82, 110, 88, 0.95);
+}
+
+/* LOGO */
+.logo h1 {
+    font-size: 24px;
+    line-height: 1.2;
+    color: white;
+}
+
+/* NAV LINKS */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+/* ACTIVE PAGE */
+nav a.active {
+    border-bottom: 2px solid white;
+    padding-bottom: 3px;
+}
+/* PAGE BACKGROUND */
+body {
+    background-color: #f2f4f7;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* PAGE CONTENT CONTAINER */
+.page-content {
+    max-width: 875px;
+    margin: 120px auto 60px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+/* TITLE */
+.page-content h1 {
+    text-align: center;
+    color: #1a552c;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px gray;
+}
+
+/* SECTION HEADINGS */
+.page-content h2 {
+    color: #1a552c;
+    margin-top: 40px;
+    border-bottom: 2px solid #1a552c;
+    padding-bottom: 5px;
+}
+
+/* PARAGRAPHS */
+.page-content p {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-top: 15px;
+}
+
+/* NUMBER STYLE */
+.page-content sup {
+    color: #0c9655;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+/* BACK TO TOP BUTTON */
+#backToTop {
+    display: none; 
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 12px 16px;
+    font-size: 18px;
+    border: none;
+    border-radius: 50%;
+    background-color: #2f4f3f;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    transition: 0.3s ease;
+    z-index: 999;
+}
+
+#backToTop:hover {
+    background-color: #3d6b57;
+    transform: scale(1.1);
+}
+
+.reveal-box {
+    margin-top: 20px;
+}
+
+.reveal-box img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.reveal-box img:hover {
+    transform: scale(1.05);
+}
+
+.hidden-text {
+    display: none;
+    margin-top: 12px;
+    padding: 15px;
+    background: white;
+    border-left: 4px solid #0a7f42;
+    border-radius: 8px;
+}
